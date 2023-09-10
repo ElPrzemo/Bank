@@ -57,20 +57,41 @@ public class Bank {
         throw new OperationNotAllowed("Nie można dokonać wypłaty.");
     }
 
-    public long deposit(long accountNumber, long cash) {
-        return 0;
+    public long deposit(long accountNumber, long cash) throws AccountNotExists, OperationNotAllowed {
+        Account account = findAccount(accountNumber);
+
+        if (account.increaseBalance(cash)) {
+            return account.getAccountBalance();
+        } else {
+            throw new OperationNotAllowed("Operacja niedozwolona");
+        }
     }
 
     public boolean transfer(long sourceNumber, long destinationNumber, long cash) {
+
+        try {
+            withdraw(sourceNumber, cash);
+            deposit(destinationNumber, cash);
+
+        } catch (AccountNotExists | OperationNotAllowed e) {
+            return false;
+        }
+
         return true;
     }
 
-    public long accountBalance(long accountNumber) {
-        return 0;
+    public long accountBalance(long accountNumber) throws AccountNotExists  {
+        Account account = findAccount(accountNumber);
+        return account.getAccountBalance();
     }
 
     public long bankBalance() {
-        return 0;
+        long sumBalance =0;
+
+        for (Account account: accounts){
+            sumBalance+=account.getAccountBalance();
+        }
+        return sumBalance;
     }
 }
 

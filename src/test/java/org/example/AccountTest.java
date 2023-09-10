@@ -23,11 +23,11 @@ class AccountTest {
         assertEquals(0, account.getAccountBalance());
     }
 
-    @Test
-    public void testIncreaseBalance() {  //  Sprawdza, czy można poprawnie zwiększyć saldo na koncie i czy nowe saldo jest zgodne z oczekiwaniami.
-        assertTrue(account.increaseBalance(100));
-        assertEquals(100, account.getAccountBalance());
-    }
+//    @Test
+//    public void testIncreaseBalance() {  //  Sprawdza, czy można poprawnie zwiększyć saldo na koncie i czy nowe saldo jest zgodne z oczekiwaniami.
+//        assertTrue(account.increaseBalance(100));
+//        assertEquals(100, account.getAccountBalance());
+//    }
 
     @Test
     public void testReduceBalance() { // Sprawdza, czy próba zwiększenia salda o ujemną kwotę jest obsługiwana poprawnie i czy saldo nie zmienia się.

@@ -19,9 +19,9 @@ public class Account {
             this.balance += cash;
             return true;
         }
+
         return false;
     }
-
 
     public boolean reduceBalance(long cash) {
         if(cash > 0 && balance > cash) {
