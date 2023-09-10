@@ -4,26 +4,26 @@ import java.math.BigDecimal;
 
 public class Transaction {
 
-        private TransactionType type;
-        private BigDecimal amount;
-        private String description;
+    private int transactionNumber;
+    private BigDecimal amount;
+    private TransactionType type;
 
-        public Transaction(TransactionType type, BigDecimal amount) {
-            this.type = type;
-            this.amount = amount;
-            this.description = type == TransactionType.DEPOSIT ? "Wpłata" : "Wypłata";
-        }
-
-        public TransactionType getType() {
-            return type;
-        }
-
-        public BigDecimal getAmount() {
-            return amount;
-        }
-
-        public String getDescription() {
-            return description;
-        }
+    public Transaction(int transactionNumber, TransactionType type, BigDecimal amount) {
+        this.transactionNumber = transactionNumber;
+        this.type = type;
+        this.amount = amount;
     }
+
+    public int getTransactionNumber() {
+        return transactionNumber;
+    }
+
+    public TransactionType getType() {
+        return type;
+    }
+
+    public BigDecimal getAmount() {
+        return amount;
+    }
+}
 
