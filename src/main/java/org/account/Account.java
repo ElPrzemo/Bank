@@ -1,46 +1,43 @@
 package org.account;
 
+import java.math.BigDecimal;
+import java.util.UUID;
+
 public class Account {
 
-    private static long accountNumbers =0;
+    private UUID accountNumber;
+    private BigDecimal balance;
 
-    private long number;
-
-    private long balance;
     public Account() {
-        accountNumbers++;
-        number = accountNumbers;
-        this.balance=0;
-
+        accountNumber = UUID.randomUUID(); // Generowanie unikalnego identyfikatora UUID
+        balance = BigDecimal.ZERO; // Początkowe saldo wynosi 0
     }
 
-    public boolean increaseBalance(long cash) {
-        if(cash > 0) {
-            this.balance += cash;
+    public boolean increaseBalance(BigDecimal amount) {
+        if (amount.compareTo(BigDecimal.ZERO) > 0) {
+            balance = balance.add(amount);
             return true;
         }
-
         return false;
     }
 
-    public boolean reduceBalance(long cash) {
-        if(cash > 0 && balance > cash) {
-            balance -= cash;
+    public boolean reduceBalance(BigDecimal amount) {
+        if (amount.compareTo(BigDecimal.ZERO) > 0 && balance.compareTo(amount) >= 0) {
+            balance = balance.subtract(amount);
             return true;
         }
-
         return false;
     }
 
-
-
-    public long getAccountNumber() {
-        return number;
+    public UUID getAccountNumber() {
+        return accountNumber;
     }
 
-    public long getAccountBalance() {
-
+    public BigDecimal getAccountBalance() {
         return balance;
     }
 }
+
+
+
 
