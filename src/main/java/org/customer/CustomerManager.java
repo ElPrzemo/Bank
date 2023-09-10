@@ -4,6 +4,7 @@ public class CustomerManager {
 
     public void printCustomerInfo(Customer customer) {
         System.out.println("Imię i nazwisko: " + customer.getFullName());
+        System.out.println("Płeć: ");
         System.out.println("Data urodzenia: " + customer.getBirthDate());
         System.out.println("Wiek: " + customer.getAge());
         System.out.println("Email: " + customer.getEmail());

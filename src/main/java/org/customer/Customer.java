@@ -15,6 +15,7 @@ public class Customer {
     private String phoneNumber;
     private CustomerLevel customerLevel;
     private Address address;
+    private Gender gender; // Nowe pole "płeć"
 
     private Customer(CustomerBuilder builder) {
         this.firstName = builder.firstName;
@@ -25,9 +26,10 @@ public class Customer {
         this.phoneNumber = builder.phoneNumber;
         this.customerLevel = builder.customerLevel;
         this.address = builder.address;
+        this.gender = builder.gender; // Inicjalizacja pola "płeć"
     }
 
-    public static CustomerManager getManager() {  //statyczne odwołanie się do customerMenagera
+    public static CustomerManager getManager() {
         return manager;
     }
 
@@ -59,7 +61,11 @@ public class Customer {
         return address;
     }
 
-    public void printInfo() {          //  tutaj jest metoda do wyświetlania informacji o kliencie za pomocą menagera
+    public Gender getGender() {
+        return gender; // Getter dla pola "płeć"
+    }
+
+    public void printInfo() {
         manager.printCustomerInfo(this);
     }
 
@@ -72,6 +78,7 @@ public class Customer {
         private String phoneNumber;
         private CustomerLevel customerLevel;
         private Address address;
+        private Gender gender; // Nowe pole "płeć"
 
         public CustomerBuilder(String firstName, String lastName) {
             this.firstName = firstName;
@@ -108,6 +115,11 @@ public class Customer {
 
         public CustomerBuilder address(Address address) {
             this.address = address;
+            return this;
+        }
+
+        public CustomerBuilder gender(Gender gender) {
+            this.gender = gender; // Ustawienie pola "płeć"
             return this;
         }
 

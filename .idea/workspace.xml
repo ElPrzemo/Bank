@@ -4,10 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="031c9669-9d82-4a79-a9f5-666ff6386308" name="Changes" comment="skeleton 1.1&#10;Added Print Customer info">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/customer/CustomerMenager.java" afterDir="false" />
+    <list default="true" id="031c9669-9d82-4a79-a9f5-666ff6386308" name="Changes" comment="skeleton 1.1&#10;Added Print Customer info&#10;+ added static CustomerManager in Customer with print info">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/customer/CustomerStatisticsManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/customer/Gender.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/customer/Province.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/customer/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/customer/Address.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/customer/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/customer/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/customer/CustomerManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/customer/CustomerManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +89,7 @@
       <updated>1694273694295</updated>
       <workItem from="1694273695629" duration="525000" />
       <workItem from="1694274234908" duration="6823000" />
-      <workItem from="1694329372938" duration="7330000" />
+      <workItem from="1694329372938" duration="9067000" />
     </task>
     <task id="LOCAL-00001" summary="Account i Bank">
       <created>1694292193996</created>
@@ -122,7 +126,14 @@
       <option name="project" value="LOCAL" />
       <updated>1694345697681</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="skeleton 1.1&#10;Added Print Customer info&#10;+ added static CustomerManager in Customer with print info">
+      <created>1694346630165</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1694346630165</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -134,6 +145,7 @@
     <MESSAGE value="skeleton 1.0" />
     <MESSAGE value="skeleton 1.1&#10;Added Customer with Address" />
     <MESSAGE value="skeleton 1.1&#10;Added Print Customer info" />
-    <option name="LAST_COMMIT_MESSAGE" value="skeleton 1.1&#10;Added Print Customer info" />
+    <MESSAGE value="skeleton 1.1&#10;Added Print Customer info&#10;+ added static CustomerManager in Customer with print info" />
+    <option name="LAST_COMMIT_MESSAGE" value="skeleton 1.1&#10;Added Print Customer info&#10;+ added static CustomerManager in Customer with print info" />
   </component>
 </project>
