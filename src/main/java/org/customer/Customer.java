@@ -2,22 +2,25 @@ package org.customer;
 
 import java.time.LocalDate;
 import java.time.Period;
+import java.util.UUID;
 
 public class Customer {
 
     private static final CustomerManager manager = new CustomerManager();
 
+    private String customerId; // Unikalny identyfikator klienta
     private String firstName;
     private String lastName;
     private LocalDate birthDate;
     private int age;
     private String email;
     private String phoneNumber;
-    private CustomerLevel customerLevel;
+    public CustomerLevel customerLevel;
     private Address address;
     private Gender gender; // Nowe pole "płeć"
 
     private Customer(CustomerBuilder builder) {
+        this.customerId = UUID.randomUUID().toString(); // Generowanie unikalnego identyfikatora UUID
         this.firstName = builder.firstName;
         this.lastName = builder.lastName;
         this.birthDate = builder.birthDate;
@@ -31,6 +34,10 @@ public class Customer {
 
     public static CustomerManager getManager() {
         return manager;
+    }
+
+    public String getCustomerId() {
+        return customerId;
     }
 
     public String getFullName() {
