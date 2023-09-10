@@ -6,7 +6,7 @@ public class Address {
     private String city;
     private String postalCode;
     private String country;
-    private String province; // Dodane pole na województwo
+    private String province;
 
     public Address(String street, String city, String postalCode, String country, String province) {
         this.street = street;
@@ -36,10 +36,6 @@ public class Address {
         return province;
     }
 }
-
-
-
-
 
 
 
