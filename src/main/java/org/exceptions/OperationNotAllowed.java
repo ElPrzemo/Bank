@@ -1,4 +1,4 @@
-package org.example.exceptions;
+package org.exceptions;
 
 public class OperationNotAllowed extends Exception {
 

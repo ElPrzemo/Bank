@@ -4,12 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="031c9669-9d82-4a79-a9f5-666ff6386308" name="Changes" comment="Account i Bank">
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/BankTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Account.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Bank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Bank.java" afterDir="false" />
+    <list default="true" id="031c9669-9d82-4a79-a9f5-666ff6386308" name="Changes" comment="Skeleton">
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/account/Account.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Bank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/bank/Bank.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/exceptions/AccountNotExists.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/exceptions/AccountNotExists.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/exceptions/OperationNotAllowed.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/exceptions/OperationNotAllowed.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/example/AccountTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/AccountTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/BankTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/BankTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,6 +64,12 @@
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\przem\IdeaProjects\SDA\Bank\Bank\src\main" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="org" />
+    </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="org.example" />
     </key>
@@ -76,7 +84,7 @@
       <updated>1694273694295</updated>
       <workItem from="1694273695629" duration="525000" />
       <workItem from="1694274234908" duration="6823000" />
-      <workItem from="1694329372938" duration="3931000" />
+      <workItem from="1694329372938" duration="4478000" />
     </task>
     <task id="LOCAL-00001" summary="Account i Bank">
       <created>1694292193996</created>
@@ -85,7 +93,14 @@
       <option name="project" value="LOCAL" />
       <updated>1694292193996</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Skeleton">
+      <created>1694343105245</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1694343105245</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -93,6 +108,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Account i Bank" />
-    <option name="LAST_COMMIT_MESSAGE" value="Account i Bank" />
+    <MESSAGE value="Skeleton" />
+    <option name="LAST_COMMIT_MESSAGE" value="Skeleton" />
   </component>
 </project>

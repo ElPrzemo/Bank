@@ -1,7 +1,8 @@
-package org.example;
+package org.bank;
 
-import org.example.exceptions.AccountNotExists;
-import org.example.exceptions.OperationNotAllowed;
+import org.account.Account;
+import org.exceptions.AccountNotExists;
+import org.exceptions.OperationNotAllowed;
 
 import java.util.ArrayList;
 import java.util.List;
