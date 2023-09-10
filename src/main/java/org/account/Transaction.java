@@ -5,25 +5,39 @@ import java.math.BigDecimal;
 public class Transaction {
 
     private int transactionNumber;
+    private TransactionType transactionType;
     private BigDecimal amount;
-    private TransactionType type;
 
-    public Transaction(int transactionNumber, TransactionType type, BigDecimal amount) {
+    public Transaction(int transactionNumber, TransactionType transactionType, BigDecimal amount) {
         this.transactionNumber = transactionNumber;
-        this.type = type;
+        this.transactionType = transactionType;
         this.amount = amount;
     }
+
+    // Getters and setters (jeśli są potrzebne)
 
     public int getTransactionNumber() {
         return transactionNumber;
     }
 
-    public TransactionType getType() {
-        return type;
+    public void setTransactionNumber(int transactionNumber) {
+        this.transactionNumber = transactionNumber;
+    }
+
+    public TransactionType getTransactionType() {
+        return transactionType;
+    }
+
+    public void setTransactionType(TransactionType transactionType) {
+        this.transactionType = transactionType;
     }
 
     public BigDecimal getAmount() {
         return amount;
+    }
+
+    public void setAmount(BigDecimal amount) {
+        this.amount = amount;
     }
 }
 

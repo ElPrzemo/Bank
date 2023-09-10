@@ -3,24 +3,28 @@ package org.account;
 import java.math.BigDecimal;
 
 public class TransactionMenager {
-    public boolean increaseBalance(Account account, BigDecimal amount) {
+
+    public void increaseBalance(Account account, BigDecimal amount) {
         if (amount.compareTo(BigDecimal.ZERO) > 0) {
-            account.getBalance().add(amount);
-            Transaction transaction = new Transaction(account.getTransactionHistory().size() + 1, TransactionType.DEPOSIT, amount);
-            account.getTransactionHistory().add(transaction);
-            return true;
+            BigDecimal newBalance = account.getAccountBalance().add(amount);
+            account.setAccountBalance(newBalance);
+            account.getTransactionHistory().add(new Transaction(account.getTransactionHistory().size() + 1, TransactionType.DEPOSIT, amount));
         }
-        return false;
     }
 
-    public boolean reduceBalance(Account account, BigDecimal amount) {
-        if (amount.compareTo(BigDecimal.ZERO) > 0 && account.getBalance().compareTo(amount) >= 0) {
-            account.getBalance().subtract(amount);
-            Transaction transaction = new Transaction(account.getTransactionHistory().size() + 1, TransactionType.WITHDRAWAL, amount);
-            account.getTransactionHistory().add(transaction);
-            return true;
+    public void reduceBalance(Account account, BigDecimal amount) {
+        if (amount.compareTo(BigDecimal.ZERO) > 0 && account.getAccountBalance().compareTo(amount) >= 0) {
+            BigDecimal newBalance = account.getAccountBalance().subtract(amount);
+            account.setAccountBalance(newBalance);
+            account.getTransactionHistory().add(new Transaction(account.getTransactionHistory().size() + 1, TransactionType.WITHDRAWAL, amount));
         }
-        return false;
     }
-}
+
+    public void addTransaction(Account account, TransactionType type, BigDecimal amount) {
+        if (type == TransactionType.DEPOSIT) {
+            increaseBalance(account, amount);
+        } else if (type == TransactionType.WITHDRAWAL) {
+            reduceBalance(account, amount);
+        }
+    }
 }

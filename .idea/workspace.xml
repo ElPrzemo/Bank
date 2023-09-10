@@ -4,12 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="031c9669-9d82-4a79-a9f5-666ff6386308" name="Changes" comment="Added Transaction, and transactions History">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/account/TransactionHistory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/account/TransactionMenager.java" afterDir="false" />
+    <list default="true" id="031c9669-9d82-4a79-a9f5-666ff6386308" name="Changes" comment="Little Refactor">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/account/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/account/Account.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/account/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/account/Transaction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/account/TransactionHistory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/account/TransactionHistory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/account/TransactionMenager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/account/TransactionMenager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/bank/Bank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/bank/Bank.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +88,7 @@
       <updated>1694273694295</updated>
       <workItem from="1694273695629" duration="525000" />
       <workItem from="1694274234908" duration="6823000" />
-      <workItem from="1694329372938" duration="13160000" />
+      <workItem from="1694329372938" duration="15221000" />
     </task>
     <task id="LOCAL-00001" summary="Account i Bank">
       <created>1694292193996</created>
@@ -152,7 +153,14 @@
       <option name="project" value="LOCAL" />
       <updated>1694351898386</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Refactored Account and Added Transaction HistoryMenager and TransactionMenager">
+      <created>1694352579044</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1694352579044</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -169,6 +177,8 @@
     <MESSAGE value="Added Customer Statistics Menager + enums/Province and Gender" />
     <MESSAGE value="Added Customer UUID + CustomerMenager" />
     <MESSAGE value="Added Transaction, and transactions History" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Transaction, and transactions History" />
+    <MESSAGE value="Refactored Account and Added Transaction HistoryMenager and TransactionMenager" />
+    <MESSAGE value="Little Refactor" />
+    <option name="LAST_COMMIT_MESSAGE" value="Little Refactor" />
   </component>
 </project>
