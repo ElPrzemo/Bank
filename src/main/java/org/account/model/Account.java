@@ -1,6 +1,7 @@
 package org.account.model;
 
 import org.account.menagment.TransactionMenager;
+import org.bank.model.TransactionHistory;
 import org.exceptions.OperationNotAllowed;
 
 import java.math.BigDecimal;
@@ -14,12 +15,14 @@ public class Account {
     private BigDecimal balance;
     private List<Transaction> transactionHistory;
     private TransactionMenager transactionManager;
+    private TransactionHistory transactionHistoryManager;
 
-    public Account(int accountCounter) {
+    public Account(int accountCounter, TransactionHistory transactionHistory) {
         this.accountNumber = UUID.randomUUID();
         balance = BigDecimal.ZERO;
-        transactionHistory = new ArrayList<>();
+        this.transactionHistory = new ArrayList<>();
         transactionManager = new TransactionMenager();
+        this.transactionHistoryManager = transactionHistory;
     }
 
     public UUID getAccountNumber() {
@@ -48,6 +51,7 @@ public class Account {
                 balance = balance.subtract(amount);
                 Transaction withdrawalTransaction = new Transaction(transactionHistory.size() + 1, TransactionType.WITHDRAWAL, amount);
                 transactionHistory.add(withdrawalTransaction);
+                transactionHistoryManager.addTransaction(this, withdrawalTransaction);
                 return amount;
             } else {
                 throw new OperationNotAllowed("Brak wystarczających środków na koncie.");
@@ -62,6 +66,7 @@ public class Account {
             balance = balance.add(amount);
             Transaction depositTransaction = new Transaction(transactionHistory.size() + 1, TransactionType.DEPOSIT, amount);
             transactionHistory.add(depositTransaction);
+            transactionHistoryManager.addTransaction(this, depositTransaction);
             return balance;
         } else {
             throw new OperationNotAllowed("Nieprawidłowa kwota wpłaty.");

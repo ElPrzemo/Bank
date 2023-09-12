@@ -12,14 +12,16 @@ import java.util.UUID;
 public class Bank {
     private List<Account> accounts;
     private int accountCounter;
+    private TransactionHistory transactionHistory; // Dodaj pole TransactionHistory
 
-    public Bank() {
+    public Bank(TransactionHistory transactionHistory) {
         accounts = new ArrayList<>();
         accountCounter = 1;
+        this.transactionHistory = transactionHistory; // Przypisz TransactionHistory
     }
 
     public UUID createAccount() {
-        Account account = new Account(accountCounter++);
+        Account account = new Account(accountCounter++, transactionHistory); // Przekazanie TransactionHistory do konta
         accounts.add(account);
         return account.getAccountNumber();
     }
@@ -67,3 +69,8 @@ public class Bank {
         throw new AccountNotExists("Konto o numerze " + accountNumber + " nie istnieje.");
     }
 }
+
+
+
+
+

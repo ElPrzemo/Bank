@@ -4,14 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="031c9669-9d82-4a79-a9f5-666ff6386308" name="Changes" comment="Added more advanced packages">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/account/exceptions/InsufficientFundsException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/customer/exceptions/CustomerNotFoundException.java" afterDir="false" />
+    <list default="true" id="031c9669-9d82-4a79-a9f5-666ff6386308" name="Changes" comment="Added Exception Handling in Account and Custome">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/account/model/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/account/model/Account.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/account/model/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/account/model/Transaction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/customer/menagment/CustomerManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/customer/menagment/CustomerManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/customer/model/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/customer/model/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/bank/model/Bank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/bank/model/Bank.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/bank/model/TransactionHistory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/bank/model/TransactionHistory.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +90,7 @@
       <workItem from="1694329372938" duration="16462000" />
       <workItem from="1694539128965" duration="768000" />
       <workItem from="1694541777901" duration="32000" />
-      <workItem from="1694541844844" duration="3708000" />
+      <workItem from="1694541844844" duration="6087000" />
     </task>
     <task id="LOCAL-00001" summary="Account i Bank">
       <created>1694292193996</created>
@@ -178,7 +176,21 @@
       <option name="project" value="LOCAL" />
       <updated>1694544381925</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Added Exception Handling in Account and Custome">
+      <created>1694545594962</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1694545594962</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Added Exception Handling in Account and Custome">
+      <created>1694545926373</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1694545926373</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -199,7 +211,8 @@
     <MESSAGE value="Little Refactor" />
     <MESSAGE value="Little Refactor 2.0" />
     <MESSAGE value="Added more advanced packages" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added more advanced packages" />
+    <MESSAGE value="Added Exception Handling in Account and Custome" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Exception Handling in Account and Custome" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
