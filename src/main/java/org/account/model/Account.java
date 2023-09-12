@@ -1,5 +1,6 @@
-package org.account;
+package org.account.model;
 
+import org.account.menagment.TransactionMenager;
 import org.exceptions.OperationNotAllowed;
 
 import java.math.BigDecimal;

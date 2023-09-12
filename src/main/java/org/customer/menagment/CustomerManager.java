@@ -1,7 +1,9 @@
-package org.customer;
+package org.customer.menagment;
+
+import org.customer.model.Customer;
+import org.customer.model.CustomerLevel;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 
 public class CustomerManager {

@@ -1,4 +1,8 @@
-package org.account;
+package org.account.menagment;
+
+import org.account.model.Account;
+import org.account.model.Transaction;
+import org.account.model.TransactionType;
 
 import java.math.BigDecimal;
 

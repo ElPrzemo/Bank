@@ -1,6 +1,6 @@
-package org.bank;
+package org.bank.model;
 
-import org.account.Account;
+import org.account.model.Account;
 import org.exceptions.AccountNotExists;
 import org.exceptions.OperationNotAllowed;
 

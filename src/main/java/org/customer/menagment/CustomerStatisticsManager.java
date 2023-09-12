@@ -1,4 +1,9 @@
-package org.customer;
+package org.customer.menagment;
+
+import org.customer.model.Gender;
+import org.customer.model.Province;
+import org.customer.model.Customer;
+import org.customer.model.CustomerLevel;
 
 import java.util.List;
 import java.util.Map;

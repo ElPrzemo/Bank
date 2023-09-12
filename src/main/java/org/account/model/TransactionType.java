@@ -1,4 +1,4 @@
-package org.account;
+package org.account.model;
 
 public enum TransactionType {
 

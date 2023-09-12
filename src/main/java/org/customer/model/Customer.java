@@ -1,4 +1,6 @@
-package org.customer;
+package org.customer.model;
+
+import org.customer.menagment.CustomerManager;
 
 import java.time.LocalDate;
 import java.time.Period;
