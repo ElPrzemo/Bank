@@ -4,26 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="031c9669-9d82-4a79-a9f5-666ff6386308" name="Changes" comment="Little Refactor 2.0">
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/b/0ba1b9c7a4878802f938e331cc2d8a042087ec6b" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/2/b213eed56919c8d73aa598d22ee35bbc645817a6" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/8/f82f5349000ea2442e4f16df42fcfac62dbfe73c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/0/b/0ba1b9c7a4878802f938e331cc2d8a042087ec6b" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/b/2/b213eed56919c8d73aa598d22ee35bbc645817a6" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/f/8/f82f5349000ea2442e4f16df42fcfac62dbfe73c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
+    <list default="true" id="031c9669-9d82-4a79-a9f5-666ff6386308" name="Changes" comment="Added more advanced packages">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/account/exceptions/InsufficientFundsException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/customer/exceptions/CustomerNotFoundException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/account/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/account/model/Account.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/account/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/account/model/Transaction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/account/TransactionHistory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/bank/model/TransactionHistory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/account/TransactionMenager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/account/menagment/TransactionMenager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/account/TransactionType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/account/model/TransactionType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/bank/Bank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/bank/model/Bank.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/customer/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/customer/model/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/customer/CustomerLevel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/customer/model/CustomerLevel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/customer/CustomerManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/customer/menagment/CustomerManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/customer/CustomerStatisticsManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/customer/menagment/CustomerStatisticsManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/account/model/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/account/model/Account.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/account/model/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/account/model/Transaction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/customer/menagment/CustomerManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/customer/menagment/CustomerManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/customer/model/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/customer/model/Customer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +92,7 @@
       <workItem from="1694329372938" duration="16462000" />
       <workItem from="1694539128965" duration="768000" />
       <workItem from="1694541777901" duration="32000" />
-      <workItem from="1694541844844" duration="2396000" />
+      <workItem from="1694541844844" duration="3708000" />
     </task>
     <task id="LOCAL-00001" summary="Account i Bank">
       <created>1694292193996</created>
@@ -183,7 +171,14 @@
       <option name="project" value="LOCAL" />
       <updated>1694354610410</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Added more advanced packages">
+      <created>1694544381925</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1694544381925</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -203,7 +198,8 @@
     <MESSAGE value="Refactored Account and Added Transaction HistoryMenager and TransactionMenager" />
     <MESSAGE value="Little Refactor" />
     <MESSAGE value="Little Refactor 2.0" />
-    <option name="LAST_COMMIT_MESSAGE" value="Little Refactor 2.0" />
+    <MESSAGE value="Added more advanced packages" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added more advanced packages" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

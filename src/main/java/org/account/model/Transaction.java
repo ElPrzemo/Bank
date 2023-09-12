@@ -14,7 +14,7 @@ public class Transaction {
         this.amount = amount;
     }
 
-    // Getters and setters (jeśli są potrzebne)
+
 
     public int getTransactionNumber() {
         return transactionNumber;

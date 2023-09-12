@@ -17,7 +17,7 @@ public class Customer {
     private int age;
     private String email;
     private String phoneNumber;
-    public CustomerLevel customerLevel;
+    private CustomerLevel customerLevel;
     private Address address;
     private Gender gender; // Nowe pole "płeć"
 
@@ -64,6 +64,10 @@ public class Customer {
 
     public CustomerLevel getCustomerLevel() {
         return customerLevel;
+    }
+
+    public void setCustomerLevel(CustomerLevel customerLevel) {
+        this.customerLevel = customerLevel; // Setter dla poziomu klienta
     }
 
     public Address getAddress() {
